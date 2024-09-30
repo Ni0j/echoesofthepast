@@ -310,4 +310,41 @@ letter-spacing: -0.05625rem;
 text-transform: uppercase;
 }
 
+#scroll {
+  height: 300vh;
+  width: 100%;
+  position: relative;
+}
+
+#scroll {
+  #quote {
+      writing-mode: vertical-rl;
+      font-family: "Source Han Serif CN";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.5em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      animation: fadeout;
+      animation-timeline: view();
+      animation-range: contain 0% cover 100%;
+  }
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  unicode-bidi: isolate;
+}
+
 }
