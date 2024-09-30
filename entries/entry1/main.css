@@ -280,6 +280,7 @@ text-transform: uppercase;
 }
 
 .grad{
+  z-index: 999;
   position: fixed;
   bottom: -15vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #8F40FF 53.5%, rgba(0, 0, 0, 0.00) 100%);
