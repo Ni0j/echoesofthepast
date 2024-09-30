@@ -15,6 +15,7 @@
   }
 
   .header{
+    z-index: 999;
     position:fixed;
     top:0rem;
     display: flex;
@@ -278,7 +279,7 @@ flex-shrink: 0;
 .text-container{
   margin-top: 100vh;
   display: flex;
-width: 18.4375rem;
+width: 18.75rem;
 flex-direction: column;
 align-items: flex-start;
 gap: 2.5rem;
@@ -290,7 +291,7 @@ transform: translate(-50%, -50%);
 .subtitle{
   color: var(--P-1, #8F40FF);
 font-family: "Source Han Serif CN";
-font-size: 1.125rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -301,7 +302,7 @@ text-transform: uppercase;
 .text{
   color: var(--P-1, #8F40FF);
 font-family: "Source Han Serif CN";
-font-size: 1.125rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
