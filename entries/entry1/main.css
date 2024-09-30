@@ -12,8 +12,16 @@
   body{
     margin: 0rem;
     padding: 0rem;
+    transition: filter 1s ease, opacity 1s ease;
+    filter: blur(0px); 
+    opacity: 1; 
+    background-color: #F7F7F7;
   }
 
+  .blur {
+    filter: blur(2px); /* 添加模糊 */
+    opacity: 0.8; /* 半透明 */
+}
   .header{
     z-index: 999;
     position:fixed;
@@ -104,6 +112,11 @@ button {
   border-image: initial;
 }
 
+#toggleLanguage {
+    appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
 .toggle-burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,10 +245,10 @@ button {
 
 .chapCN {
   color: var(--P-1, #8F40FF);
-font-family: "Source Han Serif CN";
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size: 6rem;
-font-style: normal;
-font-weight: 400;
 line-height: 6.6875rem; /* 111.458% */
 text-transform: uppercase;
 width: 100vw;
@@ -277,6 +290,7 @@ flex-shrink: 0;
 }
 
 .text-container{
+  z-index: 0;
   margin-top: 100vh;
   display: flex;
 width: 18.75rem;
@@ -285,15 +299,16 @@ align-items: flex-start;
 gap: 2.5rem;
 position: relative;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, 0%);
+transition: filter 1s ease; 
 }
 
 .subtitle{
   color: var(--P-1, #8F40FF);
-font-family: "Source Han Serif CN";
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
 line-height: normal;
 letter-spacing: -0.05625rem;
 text-transform: uppercase;
@@ -301,10 +316,10 @@ text-transform: uppercase;
 
 .text{
   color: var(--P-1, #8F40FF);
-font-family: "Source Han Serif CN";
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
 line-height: normal;
 letter-spacing: -0.05625rem;
 text-transform: uppercase;
@@ -319,10 +334,10 @@ text-transform: uppercase;
 #scroll {
   #quote {
       writing-mode: vertical-rl;
-      font-family: "Source Han Serif CN";
-      font-size: 1.5rem;
-      font-style: normal;
+      font-family: "source-han-serif-cn-subset", sans-serif;
       font-weight: 400;
+      font-style: normal;
+      font-size: 1.5rem;
       letter-spacing: 0.5em;
       width: 100%;
       display: flex;
@@ -332,10 +347,23 @@ text-transform: uppercase;
       position: sticky;
       top: 0;
       height: 100vh;
-      animation: fadeout;
+      transition: background-color 1s ease, filter 1s ease, opacity 1s ease;
+      /* animation: fadeout;
       animation-timeline: view();
-      animation-range: contain 0% cover 100%;
+      animation-range: contain 0% cover 100%; */
+      
   }
+}
+
+.fade-in{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.fade-out{
+  background-color: #f7f7f7;
+  filter:blur(0px);
+  opacity: 1;
 }
 
 blockquote {
