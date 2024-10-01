@@ -37,6 +37,7 @@ window.addEventListener('scroll', function() {
 
 
 const toggleButton = document.getElementById('toggleLanguage');
+console.log("Button clicked!"); 
 const chineseText = document.getElementById('chinese-text');
 const englishText = document.getElementById('english-text');
 
