@@ -17,12 +17,9 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
-<link rel="stylesheet" type="text/css" href="./common.css">
-<link rel="stylesheet" type="text/css" href="./reset.css">
 <link rel="stylesheet" type="text/css" href="./main.css">
 <script src="https://cdn.jsdelivr.net/gh/silvia-odwyer/pixels.js/dist/Pixels.js"></script>
 <script type="text/javascript" src="./script.js" defer></script>
-<!-- <script type="text/javascript" src="./common.js" defer></script> -->
 
 </head>
 
@@ -63,14 +60,16 @@
   <div class="chapEN"><span class="supp">Suppressing</span><br>malevolent ghosts<br>that brings misfortune, <br>financial loss<br> and plotting harm</div>
 </div>
 <div class="button-container">
-  <button id="toggleLanguage">中文 / English</button>
+  <button id="toggleLanguage">English</button>
 </div>
 
   <div class="grad"></div>
 
   <div class="text-container">
-    <div class="subtitle">《子不語·李通判》 / （清）袁枚</div>
-    <div class="text" id="chinese-text">&nbsp;&nbsp;广西李通判者，巨富也。家蓄七姬，珍宝山积。通判年二十七疾卒。有老仆者，素忠谨，伤其主早亡，与七姬共设斋富。忽一道人持簿化缘，老仆呵之曰：「吾家主早亡，无暇施汝。」道士笑曰：「尔亦思家主复生乎？吾能作法，令其返魂。」老仆惊，奔语诸姬，羣讶然。出拜，则道士去矣。老仆与羣妾悔轻慢神仙，致令化去，各相归咎。
+
+    <div class="text" id="chinese-text" style="display: none;">
+      <div class="subtitle">《子不語·李通判》 / （清）袁枚</div>
+      &nbsp;&nbsp;广西李通判者，巨富也。家蓄七姬，珍宝山积。通判年二十七疾卒。有老仆者，素忠谨，伤其主早亡，与七姬共设斋富。忽一道人持簿化缘，老仆呵之曰：「吾家主早亡，无暇施汝。」道士笑曰：「尔亦思家主复生乎？吾能作法，令其返魂。」老仆惊，奔语诸姬，羣讶然。出拜，则道士去矣。老仆与羣妾悔轻慢神仙，致令化去，各相归咎。
       <br>未几，老仆过市，遇道士于途。老仆惊且喜，强持之请罪乞哀。道士曰：「非我靳尔主之复生也，阴司例：死人还阳，须得替代。恐尔家无人代死，吾是以去。」老仆曰：「请归商之。」
       <br>拉道士至家，以道士语告羣妾。羣妾初闻道士之来也，甚喜；继闻将(伐)［代］死也，皆恚，各相视噤不发声。老仆毅然曰：「诸娘子青年可惜，老奴残年何足惜？」出见道士曰：「如老奴者代，可乎？」道士曰：「尔能无悔无怖则可。」曰：「能。」道士曰：「念汝诚心，可出外与亲友作别。待我作法，三日法成，七日法验矣。」
       <br>老仆奉道士于家，旦夕敬礼。身至某某家，告以故，泣而诀别。其亲友有笑者，有敬者，有怜者，有耶揄不信者。老仆过圣帝庙－－素所奉也，入而拜且祷曰：「奴代家主死，求圣帝助道士放回家主魂魄。」语未竟，有赤脚僧立案前叱曰：「汝满面妖气，大祸至矣！吾救汝，慎弗泄。」赠一纸包曰：「临时取看。」言毕不见。老仆归，偷开之：手抓五具，绳索一根。遂置怀中。
@@ -84,26 +83,28 @@
       <br>群妾闻雷，往启户视之。老仆具道所见。相与急视道士。道士已为雷震死坛所，其尸上有硫磺大书「妖道炼法易形，图财贪色，天条决斩如律令」十七字。
     </div>
      
-        <div class="subtitle">《子不語·李通判》 / （清）袁枚</div>
-    <div class="text" id="english-text" >Magistrate Li of Guangxi was an extremely wealthy man. He kept seven concubines, and his home was filled with treasures stacked like mountains. At the age of twenty-seven, Li passed away due to illness. Among his servants was an old man who had always been loyal and diligent. Saddened by the premature death of his master, the old servant, together with the seven concubines, set up a memorial service and offered sacrifices. Suddenly, a Taoist priest appeared, holding a ledger and asking for donations.
-      <br>The old servant scolded him, saying, “Our master has died young, and we have no time to give to you.” The Taoist smiled and replied, “Do you wish for your master to return to life? I can perform a ritual to bring him back.” The old servant was astonished and hurriedly informed the concubines. They were all amazed and skeptical. They rushed outside to bow to the priest, but by then, the Taoist had disappeared. The old servant and the concubines regretted their earlier dismissive attitude toward the divine, blaming themselves for driving him away.
-      <br>Not long after, while the old servant was walking through the marketplace, he encountered the Taoist again. The servant, both shocked and overjoyed, forcefully held on to him, begging for forgiveness and mercy. The Taoist said, “It is not that I am unwilling to bring your master back to life, but the laws of the underworld state that for someone to return to the living, a substitute must take their place. I feared that no one in your household would be willing to die in his stead, so I left.” The old servant replied, “Allow me to return home and discuss this.”
-      <br>The old servant brought the Taoist back to the house and relayed the priest’s words to the concubines. At first, the concubines were delighted to hear that the Taoist could bring back their master, but upon learning that someone must die in exchange, they all became angry. They stared at each other, remaining silent. The old servant, however, stood up and declared, “You young ladies are in the prime of your youth; it would be a pity for you to die. As for this old servant, I am nearing the end of my days, so what does it matter?” He went out to the Taoist and asked, “Can I, an old servant, be the substitute?” The Taoist replied, “As long as you have no regrets or fear, it is possible.” The servant responded, “I am willing.” The Taoist said, “Because of your sincerity, you may go out and say goodbye to your relatives and friends. Once I begin the ritual, it will be completed in three days, and the results will be evident within seven.”
-      <br>The old servant treated the Taoist with great respect, taking him into the house and performing morning and evening rituals. He visited various friends and relatives, tearfully bidding them farewell. Some laughed, some respected him, some pitied him, while others mocked him for believing in such a thing. The servant also visited the temple of the Sage Emperor, where he had often prayed. Kneeling before the altar, he prayed, “I am offering my life in place of my master’s. Please, Sage Emperor, assist the Taoist in returning my master’s soul.” Before he could finish speaking, a barefoot monk appeared in front of the altar and sternly said, “Your face is covered in demonic energy, and a great disaster is about to befall you! I will save you, but be careful not to reveal this to anyone.” The monk handed him a paper package, saying, “Open this when the time comes.” After speaking, the monk disappeared. The old servant secretly opened the package and found five claws and a length of rope. He placed them in his pocket.
-      <br>Soon, the third day arrived, and the Taoist ordered the servant’s bed to be moved so it faced the master’s coffin. He locked the door with iron chains and left a hole through which food could be passed. The Taoist built an altar nearby, along with the concubines, and began chanting incantations. After some time, nothing unusual happened. The old servant grew suspicious.
+        
+    <div class="text" id="english-text" style="display: none;">
+      <div class="subtitle">“Li the Magistrate”
+        <br>from What the Master Would Not Discuss 
+        <br>by Yuan Mei (Qing Dynasty)</div>
+      Magistrate Li of Guangxi was an extremely wealthy man. He kept seven concubines, and his home was filled with treasures stacked like mountains. At the age of twenty-seven, Li passed away due to illness. Among his servants was an old man who had always been loyal and diligent. Saddened by the premature death of his master, the old servant, together with the seven concubines, set up a memorial service and offered sacrifices. Suddenly, a Taoist priest appeared, holding a ledger and asking for donations.
+      <br>&nbsp;&nbsp;The old servant scolded him, saying, “Our master has died young, and we have no time to give to you.” The Taoist smiled and replied, “Do you wish for your master to return to life? I can perform a ritual to bring him back.” The old servant was astonished and hurriedly informed the concubines. They were all amazed and skeptical. They rushed outside to bow to the priest, but by then, the Taoist had disappeared. The old servant and the concubines regretted their earlier dismissive attitude toward the divine, blaming themselves for driving him away.
+      <br>&nbsp;&nbsp;Not long after, while the old servant was walking through the marketplace, he encountered the Taoist again. The servant, both shocked and overjoyed, forcefully held on to him, begging for forgiveness and mercy. The Taoist said, “It is not that I am unwilling to bring your master back to life, but the laws of the underworld state that for someone to return to the living, a substitute must take their place. I feared that no one in your household would be willing to die in his stead, so I left.” The old servant replied, “Allow me to return home and discuss this.”
+      <br>&nbsp;&nbsp;The old servant brought the Taoist back to the house and relayed the priest’s words to the concubines. At first, the concubines were delighted to hear that the Taoist could bring back their master, but upon learning that someone must die in exchange, they all became angry. They stared at each other, remaining silent. The old servant, however, stood up and declared, “You young ladies are in the prime of your youth; it would be a pity for you to die. As for this old servant, I am nearing the end of my days, so what does it matter?” He went out to the Taoist and asked, “Can I, an old servant, be the substitute?” The Taoist replied, “As long as you have no regrets or fear, it is possible.” The servant responded, “I am willing.” The Taoist said, “Because of your sincerity, you may go out and say goodbye to your relatives and friends. Once I begin the ritual, it will be completed in three days, and the results will be evident within seven.”
+      <br>&nbsp;&nbsp;The old servant treated the Taoist with great respect, taking him into the house and performing morning and evening rituals. He visited various friends and relatives, tearfully bidding them farewell. Some laughed, some respected him, some pitied him, while others mocked him for believing in such a thing. The servant also visited the temple of the Sage Emperor, where he had often prayed. Kneeling before the altar, he prayed, “I am offering my life in place of my master’s. Please, Sage Emperor, assist the Taoist in returning my master’s soul.” Before he could finish speaking, a barefoot monk appeared in front of the altar and sternly said, “Your face is covered in demonic energy, and a great disaster is about to befall you! I will save you, but be careful not to reveal this to anyone.” The monk handed him a paper package, saying, “Open this when the time comes.” After speaking, the monk disappeared. The old servant secretly opened the package and found five claws and a length of rope. He placed them in his pocket.
+      <br>&nbsp;&nbsp;Soon, the third day arrived, and the Taoist ordered the servant’s bed to be moved so it faced the master’s coffin. He locked the door with iron chains and left a hole through which food could be passed. The Taoist built an altar nearby, along with the concubines, and began chanting incantations. After some time, nothing unusual happened. The old servant grew suspicious.
       <div id="scroll">
         <blockquote id="quote">
           As soon as he began to doubt, he heard a rustling sound beneath the bed.
         </blockquote>
       </div>
       <br>Two black figures leaped out from the ground. They had green eyes and deep-set sockets, short fur covering their entire bodies, and stood about two feet tall, with heads as large as cartwheels. Their glaring eyes fixated on the servant as they circled the coffin, biting at its seams. The seam cracked open, and the sound of coughing emerged—just like the master’s. The two ghosts opened the coffin lid and helped the master out, though he appeared weak and sickly. The ghosts rubbed his belly, and his voice became audible. But as the old servant watched, he noticed that the figure resembled his master, but the voice was that of the Taoist. Suddenly, the servant recalled the words of the Sage Emperor and thought, “Could it be that his warning was true?” In haste, he grabbed the claws from his pocket. They flew out and transformed into a golden dragon, several feet long, which grabbed the old servant and tied him to a beam in the room. The servant, now groggy, looked down and saw the two ghosts helping the master out of the coffin and laying him on the servant’s bed, but no one entered his body. The master cried out loudly, “The ritual has failed!” The two ghosts, furious, searched the room but could not find him. Enraged, the master tore apart the servant’s bedding in frustration. One of the ghosts looked up and saw the servant tied to the beam, rejoicing and attempting to grab him along with the master. But before they could reach him, a loud thunderclap sounded, and they were both struck down. The coffin resealed itself, and the ghosts vanished.
-      <br>The concubines, hearing the thunder, rushed to open the door. The old servant explained everything he had witnessed. Together, they hurried to check on the Taoist, only to find that he had been struck dead by lightning on the altar. His corpse bore the smell of sulfur, and there, written in large characters, were the words: “This fraudulent Taoist sought to change forms through sorcery, driven by greed for wealth and lust. The laws of Heaven have sentenced him to execution.”
+      <br>&nbsp;&nbsp;The concubines, hearing the thunder, rushed to open the door. The old servant explained everything he had witnessed. Together, they hurried to check on the Taoist, only to find that he had been struck dead by lightning on the altar. His corpse bore the smell of sulfur, and there, written in large characters, were the words: “This fraudulent Taoist sought to change forms through sorcery, driven by greed for wealth and lust. The laws of Heaven have sentenced him to execution.”
     </div>
     </div>
 
  
   </main>
 </body>
-<script src="./script.js">
-</script>
 </html>

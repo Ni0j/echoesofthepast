@@ -320,6 +320,7 @@ flex-shrink: 0;
 .text-container{
   z-index: 0;
   margin-top: 100vh;
+  margin-bottom: 100vh;
   display: flex;
 width: 80vw;
 flex-direction: column;

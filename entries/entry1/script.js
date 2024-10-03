@@ -37,9 +37,12 @@ window.addEventListener('scroll', function() {
 
 
 const toggleButton = document.getElementById('toggleLanguage');
-console.log("Button clicked!"); 
 const chineseText = document.getElementById('chinese-text');
 const englishText = document.getElementById('english-text');
+
+// 默认中文显示，英文隐藏
+chineseText.style.display = 'block';
+englishText.style.display = 'none';
 
 toggleButton.addEventListener('click', function() {
   if (chineseText.style.display === 'none') {
