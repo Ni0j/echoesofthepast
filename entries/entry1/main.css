@@ -112,11 +112,22 @@ button {
   border-image: initial;
 }
 
+.button-container{
+  margin-top:10vh;
+}
+
 #toggleLanguage {
     appearance: button;
     background-color: transparent;
     background-image: none;
+    color: #8F40FF;
+    font-size:1rem;
+    font-family: "source-han-serif-cn-subset", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
 .toggle-burger {
   display: -webkit-box;
   display: -ms-flexbox;
