@@ -135,7 +135,7 @@ font-size: 1.5rem;
 line-height: normal;
 letter-spacing: -0.05625rem;
 }
-}
+
 
 
 .toggle-burger {
@@ -350,9 +350,15 @@ text-transform: uppercase;
 font-size: 1.5rem;
 line-height: normal;
 letter-spacing: -0.05625rem;
-text-transform: uppercase;
 }
 
+.chinese-text{
+  display: block;
+}
+
+.english-text{
+  display: none;
+}
 
 
 #scroll {
@@ -407,3 +413,4 @@ blockquote {
 
 
 
+}
