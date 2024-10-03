@@ -114,17 +114,27 @@ button {
 
 .button-container{
   margin-top:10vh;
+  color: var(--P-1, #8F40FF);
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 1.5rem;
+line-height: normal;
+letter-spacing: -0.05625rem;
 }
 
 #toggleLanguage {
     appearance: button;
     background-color: transparent;
     background-image: none;
-    color: #8F40FF;
-    font-size:1rem;
-    font-family: "source-han-serif-cn-subset", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: var(--P-1, #8F40FF);
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 1.5rem;
+line-height: normal;
+letter-spacing: -0.05625rem;
+}
 }
 
 
@@ -395,5 +405,5 @@ blockquote {
   unicode-bidi: isolate;
 }
 
-}
+
 
