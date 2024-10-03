@@ -243,6 +243,10 @@ button {
   transition: all .3s ease-in-out;
 }
 
+.chap-container{
+  width: 100vw;
+}
+
 .chapCN {
   color: var(--P-1, #8F40FF);
   font-family: "source-han-serif-cn-subset", sans-serif;
@@ -251,7 +255,7 @@ button {
 font-size: 6rem;
 line-height: 6.6875rem; /* 111.458% */
 text-transform: uppercase;
-width: 100vw;
+width: 100%;
 margin-left: 1rem;
 margin-top: 5vh;
 }
@@ -275,6 +279,7 @@ font-family: Fang;
 font-size: 3rem;
 font-style: normal;
 font-weight: 400;
+width: 100%;
 line-height: normal;
 text-transform: uppercase;
 }
@@ -294,7 +299,7 @@ flex-shrink: 0;
   z-index: 0;
   margin-top: 100vh;
   display: flex;
-width: 18.75rem;
+width: 80vw;
 flex-direction: column;
 align-items: flex-start;
 gap: 2.5rem;
