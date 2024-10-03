@@ -23,8 +23,8 @@
     opacity: 0.8; /* 半透明 */
 }
   .header{
-    z-index: 999;
-    position:fixed;
+/*     z-index: 999;
+ */    position:fixed;
     top:0rem;
     display: flex;
     width: 100vw;
@@ -280,8 +280,8 @@ text-transform: uppercase;
 }
 
 .grad{
-  z-index: 999;
-  position: fixed;
+/*   z-index: 999;
+ */  position: fixed;
   bottom: -15vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #8F40FF 53.5%, rgba(0, 0, 0, 0.00) 100%);
 filter: blur(2px);
@@ -291,8 +291,8 @@ flex-shrink: 0;
 }
 
 .text-container{
-  z-index: 0;
-  margin-top: 100vh;
+/*   z-index: 0;
+ */  margin-top: 100vh;
   display: flex;
 width: 18.75rem;
 flex-direction: column;
@@ -380,3 +380,12 @@ blockquote {
 
 }
 
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ gmp-map {
+  height: 100%;
+}
+
+.map-container{
+  height: 100vh;
+}
