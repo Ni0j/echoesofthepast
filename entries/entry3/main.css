@@ -264,23 +264,29 @@
     transition: all .3s ease-in-out;
   }
 
-  .image-container{
-    height: 95vh;
-    width: 100vw;
-    position: absolute;
+  .img-container {
+    height: 95vh;  /* 容器的高度 */
+    width: 100vw;  /* 容器的宽度 */
+bottom:0rem;
+    overflow: hidden; /* 防止图片溢出容器 */
     margin-bottom: 0rem;
   }
-  .img-mhc{
+  
+  .img-mhc {
     display: inline-flex;
-height: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-  }
-
-  img {
-    width: 100%;
     height: 100%;
-    object-fit: cover; /* 让图片覆盖容器 */
-}
+    width: 100%; /* 确保容器宽度100% */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%; /* 最大高度为容器高度 */
+    width: auto; /* 宽度根据比例自动调整 */
+    height: auto; /* 高度自动以保持比例 */
+    object-fit: cover; /* 保持图片比例，填满容器 */
+  }
+  
+
 }
