@@ -6,19 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <style>
-        #map { height: 600px; } /* 设置地图容器的高度 */
-        .bouncing-icon {
-            animation: bounce 1s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="./script.js"></script>
 </head>
 <body>
-    <div id="map"></div> <!-- 地图的容器 -->
+    <div class="header">
+        <div class="title">
+            <p style="color: var(--P-1, #8F40FF);
+            font-family: Fang;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;">Echoes of The Past</p>
+            <p style="color: var(--P-1, #8F40FF);
+            font-family: Fang;
+            font-size: 0.75rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;">NYC Manhole Covers & Ancient Chinese Strange Stories</p>
+        </div>
+        <button class="nav-mobile-toggle nav-toggle" aria-label="close">
+            <div class="toggle-burger toggle-burger--open">
+                <div class="burger-line burger-line_top"></div>
+                <div class="burger-line burger-line_middle"></div>
+                <div class="burger-line burger-line_bottom"></div>
+            </div>
+            <div class="toggle-close">
+                <div class="toggle-close-inner">
+                    <div class="close-line"></div>
+                    <div class="close-line"></div>
+                </div>
+            </div>
+        </button>
+      </div>
+
+
+      
+    <div id="map-container">
+        <div id="map"></div>
+        <div class="overlay"></div>
+    </div>
+    <div id="markers-container"></div>
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
