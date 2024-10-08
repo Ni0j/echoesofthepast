@@ -35,6 +35,9 @@
   align-items: center;
   border-bottom: 1px solid var(--P-1, #8F40FF);
   background: var(--bg-color, #F7F7F7);
+  font-family: "source-han-serif-cn-subset", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header-content {
