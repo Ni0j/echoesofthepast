@@ -306,7 +306,7 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%); 
+  transform: translate(-50%, -50%); 
   width: 40vw; 
   height: auto;
   overflow: hidden; 
