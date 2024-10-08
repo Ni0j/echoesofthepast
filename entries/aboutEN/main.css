@@ -22,37 +22,31 @@
     filter: blur(2px); /* 添加模糊 */
     opacity: 0.8; /* 半透明 */
 }
-  .header{
-    z-index: 999;
-    position:fixed;
-    top:0rem;
-    display: flex;
-    width: 100vw;
-    height: 5vh;
-    padding: 0.25rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 8rem;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-bottom: 1px solid var(--P-1, #8F40FF);
-background: var(--bg-color, #F7F7F7);
-  }
-  
-  .title{
-    display: flex;
-    width: 20rem;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: #f7f7f7;
-  }
 
-  .title p{
-    margin: 0;
-  }
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0rem;
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  padding: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--P-1, #8F40FF);
+  background: var(--bg-color, #F7F7F7);
+}
 
+.title {
+  flex: 0 0 auto; /* 确保标题不会缩放 */
+  margin-left: 2rem; /* 设置文本距离左侧的固定距离 */
+}
+
+.button {
+  flex: 0 0 auto; /* 确保按钮不会缩放 */
+  margin-right: 2rem; /* 设置按钮距离右侧的固定距离（可选） */
+  margin-left: auto; /* 让按钮自动填充剩余空间，保持整体居中 */
+}
 
 .nav-mobile-toggle {
     grid-area: toggle;
