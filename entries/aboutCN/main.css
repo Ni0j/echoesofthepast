@@ -22,36 +22,36 @@
     filter: blur(2px); /* 添加模糊 */
     opacity: 0.8; /* 半透明 */
 }
-  .header{
-    z-index: 999;
-    position:fixed;
-    top:0rem;
-    display: flex;
-    width: 100vw;
-    height: 5vh;
-    padding: 0.25rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 8rem;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-bottom: 1px solid var(--P-1, #8F40FF);
-background: var(--bg-color, #F7F7F7);
-  }
-  
-  .title{
-    display: flex;
-    width: 20rem;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: #f7f7f7;
-  }
 
-  .title p{
-    margin: 0;
-  }
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0rem;
+  width: 100vw;
+  height: 5vh;
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: center; /* 让 header-content 居中 */
+  align-items: center;
+  border-bottom: 1px solid var(--P-1, #8F40FF);
+  background: var(--bg-color, #F7F7F7);
+}
+
+.header-content {
+  display: flex;
+  width: 88vw; /* 设置宽度为 88vw */
+  max-width:100%;
+  justify-content: space-between; /* 左右两边均匀分布 */
+  align-items: center;
+}
+
+.title {
+  flex: 0 0 auto; /* 确保标题不会缩放 */
+}
+
+.button {
+  flex: 0 0 auto; /* 确保按钮不会缩放 */
+}
 
 
 .nav-mobile-toggle {

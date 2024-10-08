@@ -40,6 +40,7 @@
 .header-content {
   display: flex;
   width: 88vw; /* 设置宽度为 88vw */
+  max-width: 100%;
   justify-content: space-between; /* 左右两边均匀分布 */
   align-items: center;
 }
