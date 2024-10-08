@@ -41,7 +41,7 @@
       </div>
 
 
-      
+
     <div id="map-container">
         <div id="map"></div>
         <div class="overlay"></div>
@@ -51,7 +51,8 @@
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 初始化地图，设置中心点和缩放级别
+    
+            
         var map = L.map('map').setView([40.73610, -73.99093], 20);
 
         // 添加OpenStreetMap的瓦片图层
@@ -59,18 +60,19 @@
             attribution: '&copy; <a href=" ">OpenStreetMap</a > contributors'
         }).addTo(map);
 
-        // 准备多个坐标数据
+        // 准备坐标数据
         var locations = [
-            { lat: 40.73610, lng: -73.99093, url: 'https://example.com/location1', img: './img/1.jpg' },
-            { lat: 51.51, lng: -0.1, url: 'https://example.com/location2', img: 'https://via.placeholder.com/50' },
-            { lat: 51.515, lng: -0.12, url: 'https://example.com/location3', img: 'https://via.placeholder.com/50' }
+            { lat: 40.73610, lng: -73.99093, url: 'https://example.com/location1', img: './img/1.jpg' }
         ];
+
+        // 保存所有标记的引用
+        var markers = [];
 
         // 遍历每个坐标，添加标记
         locations.forEach(function(location) {
             // 创建一个自定义图标
             var customIcon = L.icon({
-                iconUrl: location.img,
+                iconUrl: location.img, // 使用本地图片路径
                 iconSize: [21, 60], // 图标大小
                 className: 'bouncing-icon' // 使用CSS类使图标“弹跳”
             });
@@ -79,6 +81,16 @@
             var marker = L.marker([location.lat, location.lng], { icon: customIcon }).addTo(map);
             marker.on('click', function() {
                 window.location.href = location.url; // 点击后跳转到指定页面
+            });
+
+            // 将标记保存到数组中
+            markers.push({ marker: marker, position: L.latLng(location.lat, location.lng) });
+        });
+
+        // 监听地图的缩放和拖动事件，更新标记位置
+        map.on('moveend zoomend', function() {
+            markers.forEach(function(item) {
+                item.marker.setLatLng(item.position);
             });
         });
     </script>
