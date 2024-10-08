@@ -315,6 +315,7 @@
 
 /* 设置 fulu 图片的样式 */
 .fulu {
+  position: relative;
   width: 100%; 
   height: auto; 
   object-fit: contain; 

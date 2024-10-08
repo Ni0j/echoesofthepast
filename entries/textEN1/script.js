@@ -6,34 +6,38 @@ const body = document.querySelector('body');
 
 document.querySelector("body > nav > div.nav-wrapper > div > button")
 
-// const scrollElement = document.getElementById('scroll');
-// const quoteElement = document.getElementById('quote');
-// const textContainer = document.querySelector('.text-container');
+const scrollElement = document.getElementById('scroll');
+const quoteElement = document.getElementById('quote');
+const textContainer = document.querySelector('.text-container');
 
-// let isQuoteVisible = false;
 
-// window.addEventListener('scroll', function() {
-//     const rect = scrollElement.getBoundingClientRect();
 
-//     // 检查quote是否在视口内
-//     if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-//         if (!isQuoteVisible) {
-//             isQuoteVisible = true;
-            
-//             // 应用背景颜色和模糊效果
-//             document.body.classList.add('fade-in');
-//             textContainer.classList.add('blur');
-//         }
-//     } else {
-//         if (isQuoteVisible) {
-//             isQuoteVisible = false;
-            
-//             // 恢复背景颜色和模糊效果
-//             document.body.classList.remove('fade-in');
-//             textContainer.classList.remove('blur');
-//         }
-//     }
-// });
+let isQuoteVisible = false;
+
+window.addEventListener('scroll', function() {
+    const rect = quoteElement.getBoundingClientRect();
+    const scrollPosition = window.scrollY;
+    // console.log(scrollPosition);
+
+    // 检查quote是否在视口内
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        if (!isQuoteVisible) {
+            isQuoteVisible = true;
+            console.log("we are seeing the quote")
+            // 应用背景颜色和模糊效果
+            document.body.classList.add('fade-in');
+            // textContainer.classList.add('blur');
+        }
+    } else {
+        if (isQuoteVisible) {
+            isQuoteVisible = false;
+            console.log("cant see the quote")
+            // 恢复背景颜色和模糊效果
+            document.body.classList.remove('fade-in');
+            // textContainer.classList.remove('blur');
+        }
+    }
+});
 
 
 // const toggleButton = document.getElementById('toggleLanguage');

@@ -383,7 +383,8 @@ letter-spacing: -0.05625rem;
       position: sticky;
       top: 0;
       height: 100vh;
-      transition: background-color 1s ease, filter 1s ease, opacity 1s ease;
+      /* transition: background-color 1s ease; */
+      animation: fadeOut;
       /* animation: fadeout;
       animation-timeline: view();
       animation-range: contain 0% cover 100%; */
@@ -393,7 +394,7 @@ letter-spacing: -0.05625rem;
 
 .fade-in{
     background-color: black;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .fade-out{
@@ -401,6 +402,8 @@ letter-spacing: -0.05625rem;
   filter:blur(0px);
   opacity: 1;
 }
+
+@keyframes fadeOut { 0% { opacity: 1; /* Fully visible at the start */ } 100% { opacity: 0; /* Fully transparent at the end */ }}
 
 blockquote {
   display: block;
