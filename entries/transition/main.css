@@ -5,7 +5,7 @@
       font-family: "source-han-serif-cn-subset", sans-serif;
       font-weight: 400;
       font-style: normal;
-      /* overflow: hidden; */
+      overflow: hidden;
       background-color: #f7f7f7;
     }
   
@@ -15,6 +15,7 @@
       transition: filter 1s ease, opacity 1s ease;
       filter: blur(0px); 
       opacity: 1; 
+      overflow: hidden;
       background-color: #F7F7F7;
     }
   
@@ -271,7 +272,7 @@ bottom:0rem;
     overflow: hidden; 
     margin-bottom: 0rem;
   }
-  
+
   .mhcover {
     display: inline-flex;
     height: 100%;
@@ -289,17 +290,18 @@ bottom:0rem;
   }
 
   
-  .img-container,
 .fulu-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+
     overflow: hidden;
 }
 
-/* 确保 mhcover 在 fulu 的下面 */
+/* 确保 mhcover 在 fulu 下面 */
 .img-container {
     z-index: 1;
 }
@@ -308,7 +310,7 @@ bottom:0rem;
     z-index: 2;
 }
 
-/* mhcover 初始饱和度为 0，动画到 100% */
+/* mhcover 初始饱和度为 0，鼠标悬停时饱和度变为 100% */
 .mhcover {
     width: 100%;
     height: auto;
@@ -316,6 +318,7 @@ bottom:0rem;
     transition: filter 1s ease-in-out;
 }
 
+/* 确保 hover 动画应用到 .img-container 中的 mhcover */
 .img-container:hover .mhcover {
     filter: saturate(1);
 }
@@ -332,11 +335,12 @@ bottom:0rem;
     opacity: 1; /* 鼠标悬停时显示 */
 }
 
+/* fulu 初始动画，淡出 */
 .fulu-container .fulu {
-    animation: fadeOut 3s forwards; /* 初始时渐隐 */
+    animation: fadeOut 3s forwards;
 }
 
-/* 动画定义 */
+/* 定义 fadeOut 动画 */
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
