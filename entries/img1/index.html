@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EchoesOfThePast</title>
+  <link rel="stylesheet" href="https://use.typekit.net/sbi4coe.css">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'uva1pyg',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+
+  <!-- <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=marker&v=beta&solution_channel=GMP_CCS_infowindows_v1">
+    </script> -->
+  <script src="./map.js"></script>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+<!--   <script type="text/javascript" src="./script.js" defer></script> -->
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="title">
+        <p style="color: var(--P-1, #8F40FF);
+        font-family: Fang;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;">Echoes of The Past</p>
+        <p style="color: var(--P-1, #8F40FF);
+        font-family: Fang;
+        font-size: 0.75rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;">NYC Manhole Covers & Ancient Chinese Strange Stories</p>
+      </div>
+      <button class="nav-mobile-toggle nav-toggle" aria-label="close">
+        <div class="toggle-burger toggle-burger--open">
+          <div class="burger-line burger-line_top"></div>
+          <div class="burger-line burger-line_middle"></div>
+          <div class="burger-line burger-line_bottom"></div>
+        </div>
+        <div class="toggle-close">
+          <div class="toggle-close-inner">
+            <div class="close-line"></div>
+            <div class="close-line"></div>
+          </div>
+        </div>
+      </button>
+    </div>
+
+      <div class="img-container">
+        <img src="./img/IMG_4799.jpg" class="mhcover">
+      </div>
+
+      <div class="fulu-container">
+        <img src="./img/1.jpg" class="fulu">
+      </div>
+
+
+
+  </main>
+
+</body>
+
+
+</html>

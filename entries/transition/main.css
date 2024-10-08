@@ -1,0 +1,346 @@
+@media screen and (max-width: 768px) {
+    html{
+      margin: 0;
+      font-size:12px;
+      font-family: "source-han-serif-cn-subset", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      /* overflow: hidden; */
+      background-color: #f7f7f7;
+    }
+  
+    body{
+      margin: 0rem;
+      padding: 0rem;
+      transition: filter 1s ease, opacity 1s ease;
+      filter: blur(0px); 
+      opacity: 1; 
+      background-color: #F7F7F7;
+    }
+  
+    .blur {
+      filter: blur(2px); /* 添加模糊 */
+      opacity: 0.8; /* 半透明 */
+  }
+    .header{
+      z-index: 999;
+      position:fixed;
+      top:0rem;
+      display: flex;
+      width: 100vw;
+      height: 5vh;
+      padding: 0.25rem;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 3rem;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--P-1, #8F40FF);
+  background: var(--bg-color, #F7F7F7);
+    }
+    
+    .title{
+      display: flex;
+      width: 20rem;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-shrink: 0;
+      background-color: #f7f7f7;
+    }
+  
+    .title p{
+      margin: 0;
+    }
+  
+  
+  .nav-mobile-toggle {
+      grid-area: toggle;
+      width: 6rem;
+      height: 100%;
+      padding: 0;
+      border: none;
+      /* border: 2px solid #8F40FF; */
+      background: 0 0;
+      outline: none;
+      position: relative;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+      background-color: #f7f7f7;
+      overflow: hidden;
+  }
+  
+  .nav-mobile-toggle, .nav-title {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: all;
+  }
+  
+  button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: none;
+    border-color: buttonborder;
+    border-image: initial;
+  }
+  
+  .button-container{
+    margin-top:10vh;
+    color: var(--P-1, #8F40FF);
+    font-family: "source-han-serif-cn-subset", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: -0.05625rem;
+  }
+  
+  #toggleLanguage {
+      appearance: button;
+      background-color: transparent;
+      background-image: none;
+      color: var(--P-1, #8F40FF);
+    font-family: "source-han-serif-cn-subset", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: -0.05625rem;
+  }
+  
+  
+  
+  .toggle-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 1.5rem;
+    width: 2.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 1rem;
+  }
+  
+  .toggle-burger--open .burger-line_bottom, .toggle-burger--open .burger-line_top {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all .7s cubic-bezier(.33,1,.68,1);
+    transition: all .7s cubic-bezier(.33,1,.68,1);
+  }
+  
+  .burger-line {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #8F40FF;
+    -webkit-transition: all .4s cubic-bezier(.32,0,.67,0);
+    transition: all .4s cubic-bezier(.32,0,.67,0);
+  }
+  
+  .toggle-burger--open .burger-line_middle {
+    -webkit-transition: none;
+    transition: none;
+    opacity: 0;
+  }
+  
+  .burger-line {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #8F40FF;
+    -webkit-transition: all .4s cubic-bezier(.32,0,.67,0);
+    transition: all .4s cubic-bezier(.32,0,.67,0);
+  }
+  
+  .toggle-burger--open .burger-line_bottom, .toggle-burger--open .burger-line_top {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all .7s cubic-bezier(.33,1,.68,1);
+    transition: all .7s cubic-bezier(.33,1,.68,1);
+  }
+  
+  .burger-line {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #8F40FF;
+    -webkit-transition: all .4s cubic-bezier(.32,0,.67,0);
+    transition: all .4s cubic-bezier(.32,0,.67,0);
+  }
+  
+  .toggle-close, .toggle-close-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .toggle-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .toggle-close-inner {
+    height: 1.5rem;
+    width: 2.5rem;
+  }
+  
+  .toggle-close, .toggle-close-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .close-line:first-child {
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+  
+  .close-line {
+    height: 2px;
+    width: 100%;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #8F40FF;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .img-container {
+    height: 95vh;  
+    width: 100vw; 
+bottom:0rem;
+    overflow: hidden; 
+    margin-bottom: 0rem;
+  }
+  
+  .mhcover {
+    display: inline-flex;
+    height: 100%;
+    width: 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 100%; 
+    width: auto; 
+    height: auto; 
+    object-fit: cover;
+  }
+
+  
+  .img-container,
+.fulu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 确保 mhcover 在 fulu 的下面 */
+.img-container {
+    z-index: 1;
+}
+
+.fulu-container {
+    z-index: 2;
+}
+
+/* mhcover 初始饱和度为 0，动画到 100% */
+.mhcover {
+    width: 100%;
+    height: auto;
+    filter: saturate(0);
+    transition: filter 1s ease-in-out;
+}
+
+.img-container:hover .mhcover {
+    filter: saturate(1);
+}
+
+/* fulu 初始 opacity 为 100，hover 后变回 100，离开后渐渐恢复为 0 */
+.fulu {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fulu-container:hover .fulu {
+    opacity: 1; /* 鼠标悬停时显示 */
+}
+
+.fulu-container .fulu {
+    animation: fadeOut 3s forwards; /* 初始时渐隐 */
+}
+
+/* 动画定义 */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+}
