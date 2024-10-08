@@ -266,84 +266,58 @@
   }
 
   .img-container {
-    height: 95vh;  
-    width: 100vw; 
-bottom:0rem;
-    overflow: hidden; 
-    margin-bottom: 0rem;
-  }
-
-  .mhcover {
-    display: inline-flex;
-    height: 100%;
-    width: 100%; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  img {
-    max-width: 100%; 
-    width: auto; 
-    height: auto; 
-    object-fit: cover;
-  }
-
-  
-.fulu-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-    height: 80vh;
-
-    overflow: hidden;
+    position: fixed; /* 固定位置，确保覆盖整个页面 */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* 防止溢出 */
 }
 
-/* 确保 mhcover 在 fulu 下面 */
-.img-container {
-    z-index: 1;
-}
-
-.fulu-container {
-    z-index: 2;
-}
-
-/* mhcover 初始饱和度为 0，鼠标悬停时饱和度变为 100% */
+/* 设置 mhcover 图片占据整个页面，并保持比例 */
 .mhcover {
     width: 100%;
-    height: auto;
-    filter: saturate(0);
-    transition: filter 1s ease-in-out;
+    height: 100%;
+    object-fit: cover; /* 确保图片按比例填充整个容器 */
+    object-position: center; /* 居中显示 */
+    display: block; /* 确保图片是块级元素 */
+    filter: saturate(0); /* 初始饱和度为 0 */
+    animation: saturationLoop 12s infinite; /* 应用循环动画，总时长为 12 秒 */
 }
 
-/* 确保 hover 动画应用到 .img-container 中的 mhcover */
-.img-container:hover .mhcover {
-    filter: saturate(1);
+/* 定义饱和度变化的动画 */
+@keyframes saturationLoop {
+    0% {
+        filter: saturate(0);
+    }
+    25% {
+        filter: saturate(1);
+    }
+    75% {
+        filter: saturate(1);
+    }
+    100% {
+        filter: saturate(0);
+    }
 }
 
-/* fulu 初始 opacity 为 100，hover 后变回 100，离开后渐渐恢复为 0 */
+
+.fulu-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%); 
+  width: 80vw; 
+  height: auto;
+  overflow: hidden; 
+  z-index: 2; 
+}
+
+/* 设置 fulu 图片的样式 */
 .fulu {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-.fulu-container:hover .fulu {
-    opacity: 1; /* 鼠标悬停时显示 */
-}
-
-/* fulu 初始动画，淡出 */
-.fulu-container .fulu {
-    animation: fadeOut 3s forwards;
-}
-
-/* 定义 fadeOut 动画 */
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
 }
 
 
