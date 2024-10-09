@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   html{
     margin: 0;
-    /* margin-top: 1vh; */
+    /* margin-top: -1vh; */
     font-size:12px;
     font-family: "source-han-serif-cn-subset", sans-serif;
     font-weight: 400;
@@ -29,6 +29,16 @@ video {
     max-width: 100%;
     object-fit: contain;
     scale: 90%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-decoration: none; /* 去掉链接的下划线 */
 }
 
 
