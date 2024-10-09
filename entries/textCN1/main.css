@@ -22,37 +22,54 @@
     filter: blur(2px); /* 添加模糊 */
     opacity: 0.8; /* 半透明 */
 }
-  .header{
-    z-index: 999;
-    position:fixed;
-    top:0rem;
-    display: flex;
-    width: 100vw;
-    height: 5vh;
-    padding: 0.25rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 3rem;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-bottom: 1px solid var(--P-1, #8F40FF);
-background: var(--bg-color, #F7F7F7);
-  }
-  
-  .title{
-    display: flex;
-    width: 20rem;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: #f7f7f7;
-  }
 
-  .title p{
-    margin: 0;
-  }
 
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0rem;
+  width: 100vw;
+  height: 5vh;
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-bottom: 1px solid var(--P-1, #8F40FF);
+  background: var(--bg-color, #F7F7F7);
+  text-transform: uppercase;
+}
+
+.header-content {
+  display: flex;
+  width: 88vw; /* 设置宽度为 88vw */
+  max-width: 100%;
+  justify-content: space-between; /* 左右两边均匀分布 */
+  align-items: center;
+}
+
+.title {
+  flex: 0 0 auto; /* 确保标题不会缩放 */
+}
+
+.button {
+  flex: 0 0 auto; /* 确保按钮不会缩放 */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8125rem;
+  height: 1.8125rem;
+  border-radius: 50%; /* 确保是圆形 */
+  background: var(--P-1, #8F40FF);
+  color: white; /* 文本颜色为白色 */
+  font-family: Fang;
+  font-size: 0.75rem; /* 文本大小 */
+  cursor: pointer; /* 鼠标悬停时显示为指针 */
+  text-align: center;
+  line-height: 1; /* 确保文本垂直居中 */
+}
 
 .nav-mobile-toggle {
     grid-area: toggle;
