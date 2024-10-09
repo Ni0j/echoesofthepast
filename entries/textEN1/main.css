@@ -285,6 +285,13 @@ letter-spacing: -0.05625rem;
 .chap-container{
   margin-top: 10vh;
   width: 88vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: filter 1s ease; 
 }
 
 .chapCN {
@@ -296,13 +303,13 @@ font-size: 6rem;
 line-height: 6.6875rem; /* 111.458% */
 text-transform: uppercase;
 width: 100%;
-margin-left: 1rem;
+/* margin-left: 1rem; */
 margin-top: 5vh;
 }
 
 .chapEN{
   width: 100vw;
-  margin-left:1rem ;
+  /* margin-left:1rem ; */
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
