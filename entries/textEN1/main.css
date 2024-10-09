@@ -55,6 +55,23 @@
   flex: 0 0 auto; /* 确保按钮不会缩放 */
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8125rem;
+  height: 1.8125rem;
+  border-radius: 50%; /* 确保是圆形 */
+  background: var(--P-1, #8F40FF);
+  color: white; /* 文本颜色为白色 */
+  font-family: Fang;
+  font-size: 0.75rem; /* 文本大小 */
+  cursor: pointer; /* 鼠标悬停时显示为指针 */
+  text-align: center;
+  line-height: 1; /* 确保文本垂直居中 */
+}
+
+
 .nav-mobile-toggle {
     grid-area: toggle;
     width: 6rem;
