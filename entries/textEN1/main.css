@@ -288,7 +288,7 @@ margin-top: 5vh;
   margin-left:1rem ;
   color: var(--P-1, #8F40FF);
 font-family: Fang;
-font-size: 3rem;
+font-size: 2rem;
 margin-top: 5vh;
 font-style: normal;
 font-weight: 400;
@@ -299,7 +299,7 @@ text-transform: uppercase;
 .chapEN span{
   color: var(--P-1, #8F40FF);
 font-family: Fang;
-font-size: 6rem;
+font-size: 4rem;
 font-style: normal;
 font-weight: 400;
 width: 100%;
