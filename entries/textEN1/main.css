@@ -386,10 +386,10 @@ letter-spacing: -0.05625rem;
       top: 0;
       height: 100vh;
       transition: background-color 1s ease;
-      /* animation: fadeOut; */
-      animation: fadeout;
+      animation: fadeOut;
+      /* animation: fadeout;
       animation-timeline: view();
-      animation-range: contain 0% cover 100%;
+      animation-range: contain 0% cover 100%; */
       
   }
 }
@@ -405,7 +405,7 @@ letter-spacing: -0.05625rem;
   opacity: 1;
 }
 
-/* @keyframes fadeOut { 0% { opacity: 1;  } 100% { opacity: 0; }} */
+@keyframes fadeOut { 0% { opacity: 1;  } 100% { opacity: 0; }}
 
 blockquote {
   display: block;
