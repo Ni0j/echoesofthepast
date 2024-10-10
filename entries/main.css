@@ -28,6 +28,8 @@ video {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    transform: scale(0.9);
+    transform-origin: top left;
 }
 
 .video-container {
@@ -39,7 +41,6 @@ video {
   height: 100vh;
   overflow: hidden;
   text-decoration: none; /* 去掉链接的下划线 */
-  scale: 80%;
 }
 
 
