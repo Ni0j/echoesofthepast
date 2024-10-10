@@ -282,15 +282,23 @@ letter-spacing: -0.05625rem;
   transition: all .3s ease-in-out;
 }
 
+.content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88vw;
+}
+
 .chap-container{
   margin-top: 10vh;
-  width: 88vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  /* left: 50%;
+  transform: translate(-50%, 0%); */
   /* transition: filter 1s ease;  */
 }
 
@@ -347,7 +355,7 @@ flex-shrink: 0;
   margin-top: 100vh;
   margin-bottom: 100vh;
   display: flex;
-width: 88vw;
+width: 100%;
 flex-direction: column;
 align-items: flex-start;
 gap: 2.5rem;
