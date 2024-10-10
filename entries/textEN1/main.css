@@ -309,7 +309,7 @@ line-height: 6.6875rem; /* 111.458% */
 text-transform: uppercase;
 width: 100%;
 /* margin-left: 1rem; */
-margin-top: 5vh;
+/* margin-top: 5vh; */
 }
 
 .chapEN{
@@ -318,7 +318,7 @@ margin-top: 5vh;
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
-margin-top: 5vh;
+/* margin-top: 2vh; */
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -343,6 +343,7 @@ text-transform: uppercase;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 50vh;
 }
 
 .grad{
