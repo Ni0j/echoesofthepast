@@ -280,9 +280,22 @@ letter-spacing: -0.05625rem;
   transition: all .3s ease-in-out;
 }
 
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .chap-container{
   margin-top: 10vh;
-  width: 100vw;
+  width:92%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
 }
 
 .chapCN {
@@ -294,13 +307,13 @@ font-size: 6rem;
 line-height: 6.6875rem; /* 111.458% */
 text-transform: uppercase;
 width: 100%;
-margin-left: 1rem;
+/* margin-left: 1rem; */
 margin-top: 5vh;
 }
 
 .chapEN{
-  width: 100vw;
-  margin-left:1rem ;
+  width: 100%;
+  /* padding-left:.25rem ; */
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
@@ -322,6 +335,16 @@ line-height: normal;
 text-transform: uppercase;
 }
 
+.text-container{
+  margin-top: 50vh;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+
 .grad{
   z-index: 999;
   position: fixed;
@@ -333,7 +356,7 @@ height: 30vh;
 flex-shrink: 0;
 }
 
-.text-container{
+/* .text-container{
   z-index: 0;
   margin-top: 100vh;
   margin-bottom: 100vh;
@@ -346,7 +369,7 @@ position: relative;
 left: 50%;
 transform: translate(-50%, 0%);
 transition: filter 1s ease; 
-}
+} */
 
 .subtitle{
   color: var(--P-1, #8F40FF);
