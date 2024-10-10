@@ -32,6 +32,7 @@ video {
 }
 
 .video-container {
+  margin-top: -2vh;
   display: flex;
   justify-content: center;
   align-items: center;
