@@ -28,11 +28,10 @@ video {
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    scale: 80%;
 }
 
 .video-container {
-  margin-top: -2vh;
+  /* margin-top: -2vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +39,7 @@ video {
   height: 100vh;
   overflow: hidden;
   text-decoration: none; /* 去掉链接的下划线 */
+  scale: 80%;
 }
 
 
