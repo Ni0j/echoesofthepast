@@ -17,6 +17,14 @@ html{
     background-color: #F7F7F7;
   }
 
+  /* .leaflet-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    } */
+  
+
   .blur {
     filter: blur(2px); /* 添加模糊 */
     opacity: 0.8; /* 半透明 */
@@ -37,6 +45,14 @@ html{
   text-transform: uppercase;
 }
 
+.leaflet-container {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	}
+
+  
 .header-content {
   display: flex;
   width: 90vw; 
