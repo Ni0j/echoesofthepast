@@ -316,7 +316,7 @@ margin-top: 5vh;
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
-margin-top: 5vh;
+/* margin-top: 5vh; */
 font-style: normal;
 font-weight: 400;
 line-height: normal;
