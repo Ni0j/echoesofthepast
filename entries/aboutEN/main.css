@@ -40,7 +40,7 @@
 
 .header-content {
   display: flex;
-  width: 88vw; /* 设置宽度为 88vw */
+  width: 90vw; 
   max-width: 100%;
   justify-content: space-between; /* 左右两边均匀分布 */
   align-items: center;
@@ -69,6 +69,7 @@
   text-align: center;
   line-height: 1; /* 确保文本垂直居中 */
 }
+
 
 .nav-mobile-toggle {
     grid-area: toggle;
