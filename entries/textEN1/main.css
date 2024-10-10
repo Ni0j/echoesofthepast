@@ -287,12 +287,12 @@ letter-spacing: -0.05625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 88vw;
+  width: 100%;
 }
 
 .chap-container{
   margin-top: 10vh;
-  width: 100%;
+  width: 88%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -316,8 +316,8 @@ margin-top: 5vh;
 }
 
 .chapEN{
-  width: 100vw;
-  /* margin-left:1rem ; */
+  width: 100%;
+  padding-left:.25rem ;
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
