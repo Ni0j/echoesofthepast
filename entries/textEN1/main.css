@@ -317,7 +317,7 @@ margin-top: 5vh;
 
 .chapEN{
   width: 100%;
-  padding-left:.25rem ;
+  /* padding-left:.25rem ; */
   color: var(--P-1, #8F40FF);
 font-family: Fang;
 font-size: 2rem;
