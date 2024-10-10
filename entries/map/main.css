@@ -17,6 +17,9 @@ html{
     background-color: #F7F7F7;
   }
 
+ .leaflet-control-container{
+  display: none;
+ }
   /* .leaflet-container {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 12px;
