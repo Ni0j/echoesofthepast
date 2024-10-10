@@ -28,7 +28,7 @@ video {
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    scale: 90%;
+    scale: 80%;
 }
 
 .video-container {
