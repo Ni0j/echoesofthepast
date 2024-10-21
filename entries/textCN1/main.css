@@ -71,6 +71,13 @@
   line-height: 1; /* 确保文本垂直居中 */
 }
 
+.button-group{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap:0.9rem;
+}
+
 .nav-mobile-toggle {
     grid-area: toggle;
     width: 6rem;
