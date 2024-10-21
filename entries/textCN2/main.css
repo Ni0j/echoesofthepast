@@ -41,7 +41,7 @@
 
 .header-content {
   display: flex;
-  width: 88vw; /* 设置宽度为 88vw */
+  width: 90vw; /* 设置宽度为 90vw */
   max-width: 100%;
   justify-content: space-between; /* 左右两边均匀分布 */
   align-items: center;
@@ -368,7 +368,7 @@ flex-shrink: 0;
   margin-top: 100vh;
   margin-bottom: 100vh;
   display: flex;
-width: 88vw;
+width: 90vw;
 flex-direction: column;
 align-items: flex-start;
 gap: 2.5rem;
