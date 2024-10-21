@@ -37,7 +37,7 @@ video {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 98vh;
   overflow: hidden;
   text-decoration: none; /* 去掉链接的下划线 */
 }
